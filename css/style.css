@@ -1,0 +1,104 @@
+/*----------------------------------------------------------------
+                          Fonts
+ ----------------------------------------------------------------- */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+/*----------------------------------------------------------------
+                common styles or ulilities
+ ----------------------------------------------------------------- */
+
+
+ body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+    margin: 0%;
+}
+
+
+
+
+/*-------------------------------------------------------------------
+                        Header Style
+---------------------------------------------------------------------  */
+
+
+
+
+.title-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2D25A0;
+    padding-top: 83px;
+    padding-bottom: 83px;
+    margin-bottom: 30px;
+    
+}
+.title-text-container{
+   
+    color: #FFFFFF;
+}
+.title-text{
+    font-size: 64px;
+    width: 485px;
+    height: 230px;
+    
+}
+.watch-live-button{
+    margin-top: 27px;
+    width: 168px;
+    height: 44px;
+    color: #FFFFFF;
+    background: #E02C6D;
+    border: hidden;
+    text-decoration: none;
+    
+}
+.title-container .title-image img{
+    width: 556.01px;
+    height: 438px;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------
+                           Cards Style
+---------------------------------------------------------------------  */
+
+.player-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    
+    
+}
+
+.players .player-image img{
+    width: 300px;
+    height: 256px;
+    margin: 0px 10px;
+}
+
+.player-details-title{
+    font-size: 28px;
+}
+
+.player{
+    width: 330px;
+    height: 456px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+
