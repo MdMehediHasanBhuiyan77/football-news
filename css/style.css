@@ -132,22 +132,22 @@
     font-family: 'Rajdhani', sans-serif;
     font-size: 2.5em;
 }
+
 #title-amrerica{
     color: red;
 }
+
 .history-para{
     text-align: center;
 }
-
-
 
 .final-match-container{
     font-family: 'Rajdhani', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
