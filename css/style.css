@@ -33,7 +33,7 @@
     justify-content: space-evenly;
     background-image: url("https://cdn.dribbble.com/users/44708/screenshots/2694410/code.gif") ;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     /* background-color: #2D25A0; */
     padding-top: 83px;
     padding-bottom: 83px;
@@ -45,7 +45,17 @@
    
     color: #FFFFFF;
 }
+header:hover .title-text-container{
+    color: #E02C6D;
+}
+header:hover .title-image{
 
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3); 
+    transform: scale(1.3);
+
+    transition: transform 2s ease-in-out;
+}
 .title-text{
     font-size: 64px;
     width: 485px;
@@ -139,6 +149,8 @@
 
 .history-para{
     text-align: center;
+    padding-left: 5px ;
+    padding-right: 5px;
 }
 
 .final-match-container{
@@ -164,6 +176,10 @@
 }
 #item-color{
     color: red;
+}
+iframe{
+    width: 560px;
+    height: 315px;
 }
 
 
@@ -285,33 +301,6 @@
     transition: transform 2s ease-in-out;
 }
 
-
-
-
-
-
-
-
-
-
-/* 
-.section-container .section-image img{
-    width: 656.01px;
-    height: 438px;
-    margin-top: 6px;
-    border-radius: 5px;
-}
-
-.section-image-details{
-    border:2px solid orange;
-} */
-
-
-
-
-/*-------------------------------------------------------------------
-                        Footer Styles
----------------------------------------------------------------------  */
 footer{
     
     display: flex;
@@ -355,4 +344,166 @@ footer{
 #footer-para{
     color: rgba(245, 245, 245, 0.623);
     font-size: 0.7em;
+}
+
+
+
+/* -----------------------------------------------------------------
+                            MEDIA Querise
+ -------------------------------------------------------------------*/
+
+/* Mobile Devices */
+
+@media screen and (max-width: 688px) {
+
+
+
+     /* ----------------------------------------
+            Media Querise for Header
+    --------------------------------------------  */
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        padding-bottom: 83px;
+        margin-bottom: 70px;
+        align-items: baseline;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 10px;
+    }
+
+    .title-text {
+         font-size: 30px; 
+         width: 100%; 
+         height: 100%; 
+    }
+    
+    .watch-live-button {
+        color: #FFFFFF;
+        width: 168px;
+        height: 44px;
+        text-decoration: none;
+        background: #E02C6D;
+        border-radius: 5px;
+        border: hidden;
+    }
+
+    .title-container .title-image img {
+        width: 80%;
+        height: 80%;
+    }
+    .title-text-container {
+        margin-bottom: 50px;
+    }
+
+    /* ----------------------------------------
+            Media Querise for Players
+    --------------------------------------------  */
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 27px;
+    }
+
+    /* ----------------------------------------
+            Media Querise for Copa History
+    --------------------------------------------  */
+
+    .history-title {
+        text-align: center;
+        margin:0px;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 2.5em;
+    }
+    .history-para {
+        text-align: center;
+        padding: 10px;
+    }
+    .copa-history {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+/* --------------------------------------------
+        Media Querise for Final Match
+    --------------------------------------------  */
+
+    .final-match-container {
+        font-family: 'Rajdhani', sans-serif;
+        display: flex;
+         margin-left: 0px; 
+         margin-right: 0px; 
+         margin-top: 0px; 
+         padding-top: 0px; 
+        padding-bottom: 50px;
+        box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    iframe{
+        width: 360px;
+        height: 215px;
+        padding-bottom: 30px;
+    }
+
+
+/* --------------------------------------------
+        Media Querise for All Highlights
+    --------------------------------------------  */
+
+    .section-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        flex-direction: column;
+    }
+
+    .photo-frame {
+       width: 97.5%;
+       height: 97.5%;
+        border-width: 5px;
+        border-style: solid;
+        border-image: linear-gradient( to left, #2D25A0, rgba(0, 0, 0, 0)) 1 100%;
+        border-image-slice: 1;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        position: relative;
+        margin-top: -5px;
+        overflow: hidden;
+    }
+    .photo-album img {
+        padding-top: 5px;
+    }
+    
+    
+/* --------------------------------------------
+        Media Querise for Footer
+    --------------------------------------------  */
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        margin-top: 158px;
+        background-image: url(https://codemyui.com/wp-content/uploads/2019/06/Shooting-Star-Background-in-Pure-CSS-1.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-logo img {
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
 }
