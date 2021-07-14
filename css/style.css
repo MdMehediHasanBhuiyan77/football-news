@@ -33,7 +33,7 @@
     background-color: #2D25A0;
     padding-top: 83px;
     padding-bottom: 83px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     
 }
 .title-text-container{
@@ -72,7 +72,6 @@
 .player-container{
     display: flex;
     justify-content: center;
-    
 }
 
 .players{
@@ -92,8 +91,11 @@
 
 .player-details-title{
     font-size: 28px;
+    color: #18191F;
 }
-
+.player-details-para{
+    color: #6C6C6C;
+}
 .player{
     width: 330px;
     height: 456px;
@@ -102,3 +104,124 @@
 }
 
 
+
+
+
+/*-------------------------------------------------------------------
+                        SECTION TWO Styles
+---------------------------------------------------------------------  */
+
+
+
+
+.section-container{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 70px;   
+}
+.highlight-text-container{
+    color: #0A0826;
+    align-items: center;
+    width: 469px;
+    height: 309px;
+    margin-top: 20px;
+}
+.sec-title-text{
+    font-size: 48px;
+    width: 469px;
+    height: 120px;
+    color: #0A0826;
+    
+}
+.highlights-para{
+    color: #6C6C6C;
+    width: 404px;
+    height: 113px;
+}
+.watch-now-button{
+    
+    width: 172px;
+    height: 44px;
+    color: #FFFFFF;
+    background: #E02C6D;
+    border: hidden;
+    text-decoration: none;
+}
+.section-container .section-image img{
+    width: 656.01px;
+    height: 438px;
+    margin-top: 6px;
+    border-radius: 5px;
+}
+
+.section-image-details{
+    border:2px solid orange;
+}
+
+/* ---------------------
+    Applying Pseudo
+---------------------  */
+
+.photo-frame:hover .photo-details {
+    color: white;
+    display: block;
+    
+    background-color: rgba(0, 0, 0, 0.274);
+
+}
+
+.photo-album img {
+    width: 110%;
+}
+
+.photo-frame {
+    width: 656.01px;
+    height: 438px;
+    border-width: 5px;
+    border-style: solid;
+    border-image:linear-gradient( to left, #2D25A0, rgba(0, 0, 0, 0)) 1 100%;
+    border-image-slice: 1 ;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+   
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-details {
+    display: none;
+    position: absolute;
+    top: 0px;
+    padding-left: 20px;
+    width: 656.01px;
+    height: 438px;
+    
+}
+
+.image-title{
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    
+}
+
+.photo-details-para{
+ margin-right: 40px;
+ text-align: right;
+}
+
+ .photo-frame:hover .photo {
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3); 
+    transform: scale(1.3);
+
+    transition: transform 2s ease-in-out;
+
+}
+.photo-frame:hover .photo-details{
+    
+
+    transition: transform 2s ease-in-out;
+}
